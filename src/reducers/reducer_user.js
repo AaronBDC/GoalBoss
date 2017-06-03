@@ -1,7 +1,7 @@
 import {SIGNED_IN} from '../constants';
 
 let user = {
-  emai: null
+  email: null
 }
 export default (state=user, action) => {
   switch (action.type){

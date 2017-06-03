@@ -14,7 +14,8 @@ class App extends Component {
     return (
       <div style={{margin: '5px'}}>
         <div className="App">
-        <div className="App-title">GoalBoss</div>
+        <div className="App-title">Goal Boss</div>
+        <h5>Gett'r Done</h5>
         <AddGoal />
         <hr />
         <h4>Goals </h4>
