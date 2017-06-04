@@ -14,16 +14,28 @@ class App extends Component {
     return (
       <div style={{margin: '5px'}}>
         <div className="App">
-        <div className="App-title">Goal Boss</div>
-        <h5>Gett'r Done</h5>
+        <div className="App-title"><em>Goal</em> <strong>BOSS</strong></div>
+        <div className="App-tag">
+        <h5><em>Gett'r</em> <strong>DONE</strong></h5>
+        </div>
+        <div className="AddGoal">
+        <hr />
         <AddGoal />
         <hr />
+        </div>
         <h4>Goals </h4>
+        <div className="GoalList">
+
+        <hr />
         <GoalList />
         <hr />
+        </div>
         <h4>Complete Goals</h4>
+        <div className="CompleteGoalList">
+        <hr />
         <CompleteGoalList />
         <hr />
+        </div>
         <button
             className="btn btn-danger"
             onClick={() => this.signOut()}

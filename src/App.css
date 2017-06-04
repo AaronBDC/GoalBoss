@@ -11,3 +11,17 @@ body {
   font-size: 26px;
   color: #F5EB17;
 }
+.GoalList{
+  background: #ED2024;
+}
+.CompleteGoalList{
+  background: #6ABD45;
+  color: #F5EB17;
+  padding-left: 5px;
+}
+.AddGoal{
+  background: #3953A4;
+}
+.App-tag{
+  color: #BC7941;
+}
