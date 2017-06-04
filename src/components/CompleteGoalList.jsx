@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setCompleted } from '../actions';
 import { completeGoalRef } from '../firebase';
+import { setCompleted, clearACompleted } from '../actions';
+
+
 
 class CompleteGoalList extends Component{
   componentDidMount(){
@@ -18,7 +20,14 @@ class CompleteGoalList extends Component{
   clearCompleted(){
     completeGoalRef.set([]);
   }
+  clearACompleted(){
+//    const{email } = this.props.user;
+    const{title, index} = this.props.goal;
+    completeGoalRef.child(index).remove();
+
+  }
   render(){
+    //const {email, title} = this.props.goal;
     return(
       <div>
       {
@@ -27,6 +36,12 @@ class CompleteGoalList extends Component{
             return(
               <div key={index}>
                 <em>{title}</em> done by <strong>{email}</strong>
+                <button
+                  className="btn btn-sm btn-warning"
+                  //onClick={() => this.clearACompleted()}
+                >
+                  Clear
+                </button>
               </div>
             )
           })

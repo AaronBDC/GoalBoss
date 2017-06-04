@@ -16,14 +16,15 @@ class GoalItem extends Component{
     const {email, title} = this.props.goal;
     return(
       <div style={{margin: '5px'}}>
+
         <strong>{title}</strong>
-        <span style={{marginRight: '5px'}}> added by <em>{email}</em></span>
-        <button
-          className="btn btn-sm btn-info"
-          onClick={() => this.completeGoal()}
-        >
-          Complete
-        </button>
+        <span style={{marginRight: '5px'}}> added by <em>{email}</em>        <button
+                  className="btn btn-sm btn-info"
+                  onClick={() => this.completeGoal()}
+                >
+                  Complete
+                </button></span>
+
 
       </div>
     )
