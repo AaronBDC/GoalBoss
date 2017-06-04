@@ -31,4 +31,3 @@ Aaron DC
 ## License
 See LICENSE.MD
 ## Acknowledgements
-Schana N. Carter
