@@ -4,7 +4,6 @@ import {goalRef} from '../firebase';
 import {setGoals} from '../actions';
 import GoalItem from './GoalItem';
 
-
 class GoalList extends Component {
   componentDidMount(){
     goalRef.on('value', snap => {
@@ -24,7 +23,6 @@ class GoalList extends Component {
     {
         this.props.goals.map((goal, index) => {
           return (
-
             <GoalItem key={index} goal={goal} />
           )
         })

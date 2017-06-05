@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { completeGoalRef, goalRef } from '../firebase';
+import { Glyphicon } from 'react-bootstrap';
 
 class GoalItem extends Component{
 
@@ -15,9 +16,11 @@ class GoalItem extends Component{
   render(){
     const {email, title} = this.props.goal;
     return(
-      <div style={{margin: '5px'}}>
 
-        <strong>{title}</strong>
+      <div style={{margin: '5px'}}>
+        <Glyphicon glyph="glyphicon glyphicon-unchecked"></Glyphicon>
+
+        <strong> {title}</strong>
         <span style={{marginRight: '5px'}}> added by <em>{email}</em>        <button
                   className="btn btn-sm btn-info"
                   onClick={() => this.completeGoal()}

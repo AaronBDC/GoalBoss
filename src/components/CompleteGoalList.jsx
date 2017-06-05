@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { completeGoalRef } from '../firebase';
 import { setCompleted, clearACompleted } from '../actions';
-
-
+import { Glyphicon } from 'react-bootstrap';
 
 class CompleteGoalList extends Component{
   componentDidMount(){
@@ -35,7 +34,9 @@ class CompleteGoalList extends Component{
             const {title, email } = completeGoal;
             return(
               <div key={index}>
-                <em>{title}</em> done by <strong>{email}</strong>
+                <Glyphicon glyph="glyphicon glyphicon-check"></Glyphicon>
+
+                <em> {title}</em> done by <strong>{email}</strong>
                 <button
                   className="btn btn-sm btn-warning"
                   //onClick={() => this.clearACompleted()}
