@@ -37,13 +37,14 @@ class CompleteGoalList extends Component{
                 <Glyphicon glyph="glyphicon glyphicon-check"></Glyphicon>
 
                 <em> {title}</em> done by <strong>{email}</strong>
-                <button
-                  className="btn btn-sm btn-warning"
-                  //onClick={() => this.clearACompleted()}
-                >
-                  Clear
-                </button>
               </div>
+                //<button
+                //  className="btn btn-sm btn-warning"
+                //  //onClick={() => this.clearACompleted()}
+                //>
+                //  Clear
+                //</button>
+              //</div>
             )
           })
       }
