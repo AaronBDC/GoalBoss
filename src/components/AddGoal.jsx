@@ -25,6 +25,11 @@ class AddGoal extends Component {
             className="form-control"
             style={{marginRight: '5px'}}
             onChange={event => this.setState({title: event.target.value})}
+            onKeyPress = {event => {
+              if (event.key === 'Enter') {
+                this.addGoal()
+                }
+              }}
           />
           <button
             className="btn btn-success"
