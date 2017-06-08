@@ -17,7 +17,7 @@ A ReactJS goal list manager for multiple users via Firebase.
 ## Deployment
 
 ## Built With
-- Mac OSX Sierra
+- Mac OS Sierra
 - Atom
 - iTerm2
 
