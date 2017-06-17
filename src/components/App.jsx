@@ -18,7 +18,7 @@ class App extends Component {
         <div className="App-tag-cap">
 
         <div className="App-tag">
-        <h5><em>Getting things</em> <strong>DONE</strong></h5>
+        <h5><em>Getting things</em> <strong>DONE</strong> right</h5>
         </div>
         </div>
         <div className="AddGoal">

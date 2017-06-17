@@ -20,7 +20,7 @@ class GoalItem extends Component{
       <div style={{margin: '5px'}}>
         <Glyphicon glyph="glyphicon glyphicon-unchecked"></Glyphicon>
 
-        <strong> {title}</strong>
+        <strong>{title}</strong>
         <span style={{marginRight: '5px'}}> added by <em>{email}</em>        <button
                   className="btn btn-sm btn-info"
                   onClick={() => this.completeGoal()}
