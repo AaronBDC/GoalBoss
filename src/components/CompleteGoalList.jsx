@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { completeGoalRef } from '../firebase';
+
+// eslint-disable-next-line
 import { setCompleted, clearACompleted } from '../actions';
 import { Glyphicon } from 'react-bootstrap';
 
@@ -21,6 +23,7 @@ class CompleteGoalList extends Component{
   }
   clearACompleted(){
 //    const{email } = this.props.user;
+// eslint-disable-next-line
     const{title, index} = this.props.goal;
     completeGoalRef.child(index).remove();
 
